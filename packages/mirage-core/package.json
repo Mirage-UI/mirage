@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@mirage/tsconfig": "workspace:*",
+    "@mirage/utils": "workspace:*",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "eslint": "^8.15.0",
@@ -27,5 +28,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.5.1",
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.11.0"
   }
 }
