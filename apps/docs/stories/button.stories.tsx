@@ -1,13 +1,15 @@
 import React from "react";
-import { StoryFn, Meta } from "@storybook/react";
 import { Button } from "@mirage/core";
+import { Meta, StoryFn } from "@storybook/react";
 
 export default {
   title: "Components/Button",
   component: Button,
 } as Meta<typeof Button>;
 
-const Template: StoryFn<typeof Button> = (args) => <Button {...args}>Button</Button>;
+const Template: StoryFn<typeof Button> = (args) => (
+  <Button {...args}>Button</Button>
+);
 
 export const Primary = Template.bind({});
 Primary.args = {

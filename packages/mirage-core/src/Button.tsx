@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes, FC, forwardRef } from "react";
-import { VariantProps, cva } from "class-variance-authority";
 import { cn } from "@mirage/utils";
+import { VariantProps, cva } from "class-variance-authority";
 
 const variants = cva("bg-red-500 px-4 py-2 rounded", {
   variants: {
@@ -29,7 +29,13 @@ export interface ButtonProps
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, ...props }, ref) => {
-    return <button ref={ref} className={cn(variants({ variant, size, className }))} {...props} />;
+    return (
+      <button
+        ref={ref}
+        className={cn(variants({ variant, size, className }))}
+        {...props}
+      />
+    );
   }
 );
 

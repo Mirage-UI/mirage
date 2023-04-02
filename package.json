@@ -13,8 +13,11 @@
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
     "eslint": "^8.29.0",
+    "prettier-config-mirage": "workspace:*",
     "eslint-config-mirage": "workspace:0.0.0",
     "prettier": "^2.8.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "prettier-plugin-tailwindcss": "^0.2.6",
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0"
