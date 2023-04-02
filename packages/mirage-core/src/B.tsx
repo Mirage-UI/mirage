@@ -21,7 +21,7 @@ const variants = cva("bg-red-500 px-4 py-2 rounded", {
   },
 });
 
-interface ButtonProps
+export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof variants> {}
 
@@ -31,4 +31,4 @@ const B = forwardRef<HTMLButtonElement, ButtonProps>(
   }
 );
 
-export default B;
+export { B };

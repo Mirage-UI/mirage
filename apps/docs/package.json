@@ -3,28 +3,45 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook --docs",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build --docs",
     "preview-storybook": "serve storybook-static",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@mirage/core": "workspace:0.0.0",
+    "@babel/core": "^7.21.4",
+    "@mirage/core": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mirage/tsconfig": "workspace:0.0.0",
-    "@storybook/addon-actions": "^6.5.14",
-    "@storybook/addon-docs": "^6.5.14",
-    "@storybook/addon-essentials": "^6.5.14",
-    "@storybook/addon-links": "^6.5.14",
-    "@storybook/builder-vite": "^0.1.41",
-    "@storybook/react": "^6.5.14",
-    "@vitejs/plugin-react": "^1.3.2",
+    "@mirage/tsconfig": "workspace:*",
+    "@mirage/utils": "workspace:*",
+    "@storybook/addon-actions": "^7.0.0",
+    "@storybook/addon-docs": "^7.0.0",
+    "@storybook/addon-essentials": "^7.0.0",
+    "@storybook/addon-interactions": "^7.0.0",
+    "@storybook/addon-links": "^7.0.0",
+    "@storybook/addon-mdx-gfm": "^7.0.0",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-styling": "^1.0.0-next.1",
+    "@storybook/blocks": "^7.0.0",
+    "@storybook/builder-vite": "^7.0.0",
+    "@storybook/react": "^7.0.0",
+    "@storybook/react-vite": "^7.0.0",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
     "eslint-config-mirage": "workspace:0.0.0",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.1.0",
+    "prop-types": "^15.8.1",
     "serve": "^13.0.4",
+    "storybook": "^7.0.0",
+    "tailwindcss": "^3.3.1",
     "typescript": "^4.9.3",
-    "vite": "^2.9.15"
+    "vite": "^4.2.1"
   }
 }
