@@ -1,2 +1,2 @@
 import * as React from "react";
-export { B, type ButtonProps } from "./B";
+export { Button, type ButtonProps } from "./Button";
