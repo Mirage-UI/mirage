@@ -7,6 +7,8 @@ const variants = cva("bg-red-500 px-4 py-2 rounded", {
     variant: {
       default: "bg-blue-500 rounded-md",
       primary: "bg-blue-300 rounded-lg",
+      secondary: "bg-amber-300 rounded-xl",
+      danger: "bg-red-500 rounded-sm",
     },
 
     size: {
