@@ -1,0 +1,5 @@
+.yarn
+.next
+.pnpm
+dist
+node_modules
