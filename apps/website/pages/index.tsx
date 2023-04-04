@@ -1,16 +1,17 @@
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import Image from "next/image";
+import { Container } from '@/components/container';
+import { HomepageHero } from '@/components/section/hero-section';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <>
-      <div className="flex items-center justify-center text-7xl text-blue-600">
-        {" "}
-        Lets Start
-      </div>
+      <section className="overflow-hidden">
+        <Container className="pt-[9.4rem]">
+          <HomepageHero />
+        </Container>
+      </section>
     </>
   );
 }
