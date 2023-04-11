@@ -38,25 +38,25 @@ const TimerCard = () => {
     <section>
       <div className="flex justify-center md:gap-x-[150px] gap-x-[40px]">
         <div className="flex flex-col items-center">
-          <span className="md:text-core80 text-h5 font-bold">
+          <span className="md:text-core80 text-h2 font-bold">
             {timeLeft.days}
           </span>
           <span className="md:text-h5 text-xs font-medium">Days</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="md:text-core80 text-h5 font-bold">
+          <span className="md:text-core80 text-h2 font-bold">
             {timeLeft.hours}
           </span>
           <span className="md:text-h5 text-xs font-medium">Hours</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="md:text-core80 text-h5 font-bold">
+          <span className="md:text-core80 text-h2 font-bold">
             {timeLeft.minutes}
           </span>
           <span className="md:text-h5 text-xs font-medium">Minutes</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="md:text-core80 text-h5 font-bold">
+          <span className="md:text-core80 text-h2 font-bold">
             {timeLeft.seconds}
           </span>
           <span className="md:text-h5 text-xs font-medium">Seconds</span>
