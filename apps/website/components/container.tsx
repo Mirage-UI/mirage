@@ -24,7 +24,7 @@ export const HeaderContainer = ({
   return (
     <div
       className={classNames(
-        'mx-auto px-[2px] py-[16px] lg:px-[92px] lg:py-[32px]',
+        'mx-auto px-[2px] py-[16px] lg:px-[92px] lg:py-[8px]',
         className
       )}
     >
