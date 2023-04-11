@@ -6,7 +6,7 @@ import TimerCard from '../timer-card';
 export const HomepageHero = () => (
   <>
     <Hero>
-      <Button className="" href="/" variant="secondary" size="medium">
+      <Button className="gap-x-2" href="/" variant="secondary" size="medium">
         <Ico />
         <span>
           {' '}
